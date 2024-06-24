@@ -1,0 +1,65 @@
+/* src/Sidebar.css */
+.sidebar {
+  position:fixed;
+  top: 0px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  color: #fff;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.toggle-btn {
+  border-radius: 5px;
+  position: fixed;
+  top: 195px;
+  right:-50px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease , box-shadow 0.3s ease;;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+}
+
+.filter-icon{
+  font-size: 20px;
+}
+
+.toggle-btn:hover {
+  background-color: #fff;
+}
+
+.sidebar-content {
+  margin-top: 60px;
+  height: calc(100% - 60px); /* Full height minus the top margin */
+  overflow-y: auto; /* Make the content scrollable */
+}
+
+.sidebar-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-content li {
+  margin: 20px 0;
+}
+
+.sidebar-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar-content a:hover {
+  text-decoration: underline;
+}
